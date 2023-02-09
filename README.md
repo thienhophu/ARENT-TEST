@@ -7,8 +7,8 @@ Since this is a test project, there is no point for using too old version of bui
 | Operation / Build Environment | Request Version | Applied Version |
 | ----------------------------- | --------------- | --------------- |
 | Node.js                       | 16.13.1         | ^18.14.0        |
-| npm                           | ^6.14.15        |                 |
-| react                         | ^11.4.1         | ^18             |
+| npm                           | ^6.14.15        | ^9.3.1          |
+| react                         | ^11.4.1         | ^18.2.0         |
 
 ## Planning
 
