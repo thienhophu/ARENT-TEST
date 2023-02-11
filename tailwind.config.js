@@ -9,6 +9,9 @@ module.exports = {
       dark: { 500: '#414141', 600: '#414141' },
       gray: '#777777',
     },
+    maxWidth: {
+      default: '60rem',
+    },
     extend: {},
   },
   plugins: [],
