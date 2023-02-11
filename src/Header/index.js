@@ -1,22 +1,16 @@
 import React from 'react';
 
-import logo from './logo.svg';
-import iconMenu from './icon_menu.svg';
-import iconMemo from './icon_memo.svg';
-import iconChallenge from './icon_challenge.svg';
-import iconInfo from './icon_info.svg';
-
 const navItems = [
-  { icon: iconMemo, name: '自分の記録', url: '.' },
-  { icon: iconChallenge, name: 'チャレンジ', url: '.' },
-  { icon: iconInfo, name: 'お知らせ', url: '.' },
+  { icon: './images/icon_memo.svg', name: '自分の記録', url: '.' },
+  { icon: './images/icon_challenge.svg', name: 'チャレンジ', url: '.' },
+  { icon: './images/icon_info.svg', name: 'お知らせ', url: '.' },
 ];
 
 const Header = () => (
-  <header className="bg-dark-500 h-16 sticky top-0">
+  <header className="bg-dark-500 h-16 sticky top-0 z-10">
     <div className="max-w-default m-auto h-full py-2 px-4 flex justify-between items-center">
       <a href="." className="h-10">
-        <img src={logo} className="h-full" alt="logo" />
+        <img src={'./images/logo.svg'} className="h-full" alt="logo" />
       </a>
 
       <div className="flex flex-row items-center">
@@ -29,7 +23,7 @@ const Header = () => (
           ))}
         </nav>
 
-        <img src={iconMenu} className="h-7 w-7 ml-4 cursor-pointer" alt="menu" />
+        <img src={'./images/icon_menu.svg'} className="h-7 w-7 ml-4 cursor-pointer" alt="menu" />
       </div>
     </div>
   </header>
