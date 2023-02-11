@@ -1,5 +1,19 @@
 # AGENT TEST WEBSITE
 
+## Warm Up the project
+
+#### Install packages
+
+```
+yarn install
+```
+
+#### Start local server
+
+```
+yarn start
+```
+
 ## Upgrade Packages
 
 Since this is a test project, there is no point for using too old version of build env and leave out all of the newest features. So I decided to upgrade to the lastest version of NodeJS and ReactJS.

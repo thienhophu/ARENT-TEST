@@ -1,9 +1,9 @@
 import React from 'react';
 
-import BodyGraph from '../components/BodyGraph';
-import DateAchievementRate from '../components/DateAchievementRate';
-import FilterButtons from '../components/FilterButtons';
-import GridRecords from '../components/Grid';
+import BodyGraph from '../../components/BodyGraph';
+import DateAchievementRate from '../../components/DateAchievementRate';
+import FilterButtons from '../../components/FilterButtons';
+import GridRecords from '../../components/Grid';
 
 const filterButtons = [
   { icon: './images/icon_knife.svg', text: 'Morning' },
