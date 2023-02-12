@@ -28,15 +28,15 @@ const recordItems = [
 ];
 
 const Main = () => (
-  <main>
-    <div className="h-80 flex">
-      <DateAchievementRate className="basis-1/3" />
-      <BodyGraph className="basis-2/3" />
+  <main className="">
+    <div className="flex flex-wrap">
+      <DateAchievementRate className="md:basis-1/3" />
+      <BodyGraph className="md:basis-2/3" />
     </div>
-    <div className="max-w-default m-auto flex flex-row">
+    <div className="max-w-default m-auto px-4 flex flex-row">
       <FilterButtons buttons={filterButtons} />
     </div>
-    <div className="max-w-default m-auto mb-16">
+    <div className="max-w-default m-auto px-4 mb-16">
       <GridRecords items={recordItems} />
     </div>
   </main>

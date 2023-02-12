@@ -4,7 +4,7 @@ import Card from './Card';
 const GridRecords = ({ items }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="grid grid-cols-4 gap-4 mb-7">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-7">
         {items.map(item => (
           <Card text={item.text} />
         ))}

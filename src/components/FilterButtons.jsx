@@ -2,7 +2,7 @@ import React from 'react';
 
 const FilterButtons = ({ buttons }) => {
   return (
-    <div className="w-full flex justify-center gap-x-[84px] py-6">
+    <div className="w-full flex justify-center gap-2 md:gap-x-[84px] py-6 flex-wrap">
       {buttons.map(button => (
         <button type="button" className="relative">
           <img src="./images/icon_hex.svg" alt="Hex Button" />
