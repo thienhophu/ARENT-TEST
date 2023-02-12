@@ -33,10 +33,10 @@ const Main = () => (
       <DateAchievementRate className="md:basis-1/3" />
       <BodyGraph className="md:basis-2/3" />
     </div>
-    <div className="max-w-default m-auto px-4 flex flex-row">
+    <div className="max-w-default m-auto px-4 lg:px-0 flex flex-row">
       <FilterButtons buttons={filterButtons} />
     </div>
-    <div className="max-w-default m-auto px-4 mb-16">
+    <div className="max-w-default m-auto px-4 lg:px-0 mb-16">
       <GridRecords items={recordItems} />
     </div>
   </main>

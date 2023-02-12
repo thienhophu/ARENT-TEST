@@ -1,6 +1,7 @@
 import classNames from 'classnames';
 import React from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import Menu from '../../components/Menu';
 
 const navItems = [
   { icon: './images/icon_memo.svg', name: '自分の記録', url: 'my-record' },
@@ -30,7 +31,7 @@ const Header = () => (
           ))}
         </nav>
 
-        <img src={'./images/icon_menu.svg'} className="h-7 w-7 ml-4 cursor-pointer" alt="menu" />
+        <Menu />
       </div>
     </div>
   </header>
