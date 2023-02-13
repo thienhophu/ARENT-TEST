@@ -1,6 +1,7 @@
 import React from 'react';
 import ColumnRecommendations from '../../components/ColumnRecommendations';
 import GridColumns from '../../components/GridColumns';
+import ScrollToTopButton from '../../components/ScrollToTopButton';
 
 const recommendItems = [
   { title: 'RECOMMENDED COLUMN', text: 'オススメ' },
@@ -105,6 +106,8 @@ const Columns = () => (
     <div className="max-w-default m-auto px-4 lg:px-0 mb-16">
       <GridColumns items={columnItems} />
     </div>
+
+    <ScrollToTopButton />
   </main>
 );
 
