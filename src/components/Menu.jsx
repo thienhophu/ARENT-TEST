@@ -2,16 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import classNames from 'classnames';
 
-const menuLinks = [
-  { text: '自分の記録', url: 'my-record' },
-  { text: '体重グラフ', url: 'pending' },
-  { text: '目標', url: 'pending' },
-  { text: '選択中のコース', url: 'pending' },
-  { text: 'コラム一覧', url: 'pending' },
-  { text: '設定', url: 'pending' },
-];
-
-const Menu = () => {
+const Menu = ({ links }) => {
   const [open, setOpen] = useState(false);
 
   const onOpen = () => {
@@ -33,9 +24,10 @@ const Menu = () => {
 
       {open && (
         <div className="absolute top-full right-0 bg-gray ">
-          {menuLinks.map(link => (
+          {links.map(link => (
             <NavLink
               to={link.url}
+              key={link.text}
               onClick={onClose}
               className={({ isActive }) =>
                 classNames('hover:text-primary-400', {

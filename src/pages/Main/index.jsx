@@ -3,7 +3,7 @@ import React from 'react';
 import BodyGraph from '../../components/BodyGraph';
 import DateAchievementRate from '../../components/DateAchievementRate';
 import FilterButtons from '../../components/FilterButtons';
-import GridRecords from '../../components/Grid';
+import GridRecords from '../../components/GridRecords';
 
 const filterButtons = [
   { icon: './images/icon_knife.svg', text: 'Morning' },
@@ -13,22 +13,22 @@ const filterButtons = [
 ];
 
 const recordItems = [
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
-  { text: '05.02.Morning', image: '.' },
+  { text: '05.02.Morning', image: './images/column-1.jpg' },
+  { text: '06.02.Morning', image: './images/column-2.jpg' },
+  { text: '07.02.Morning', image: './images/column-3.jpg' },
+  { text: '08.02.Morning', image: './images/column-4.jpg' },
+  { text: '09.02.Morning', image: './images/column-5.jpg' },
+  { text: '10.02.Morning', image: './images/column-6.jpg' },
+  { text: '12.02.Morning', image: './images/column-7.jpg' },
+  { text: '15.02.Morning', image: './images/column-8.jpg' },
+  { text: '25.02.Morning', image: './images/column-1.jpg' },
+  { text: '25.02.Morning', image: './images/column-3.jpg' },
+  { text: '24.02.Morning', image: './images/column-4.jpg' },
+  { text: '31.02.Morning', image: './images/column-6.jpg' },
 ];
 
 const Main = () => (
-  <main className="">
+  <main>
     <div className="flex flex-wrap">
       <DateAchievementRate className="md:basis-1/3" />
       <BodyGraph className="md:basis-2/3" />

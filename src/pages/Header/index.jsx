@@ -9,6 +9,15 @@ const navItems = [
   { icon: './images/icon_info.svg', name: 'お知らせ', url: 'info' },
 ];
 
+const menuLinks = [
+  { text: '自分の記録', url: 'my-record' },
+  { text: '体重グラフ', url: 'pending' },
+  { text: '目標', url: 'pending' },
+  { text: '選択中のコース', url: 'pending' },
+  { text: 'コラム一覧', url: 'columns' },
+  { text: '設定', url: 'pending' },
+];
+
 const Header = () => (
   <header className="bg-dark-500 h-16 sticky top-0 z-10">
     <div className="max-w-default m-auto h-full py-2 px-4 flex justify-between items-center">
@@ -21,6 +30,7 @@ const Header = () => (
           {navItems.map(item => (
             <NavLink
               to={item.url}
+              key={item.url}
               className={({ isActive }) =>
                 classNames('hover:text-primary-400 flex flex-row', { 'text-primary-400': isActive })
               }
@@ -31,7 +41,7 @@ const Header = () => (
           ))}
         </nav>
 
-        <Menu />
+        <Menu links={menuLinks} />
       </div>
     </div>
   </header>

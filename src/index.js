@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/error-page';
 import Main from './pages/Main';
 import MyRecords from './pages/MyRecords';
+import Columns from './pages/Columns';
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,7 @@ const router = createBrowserRouter([
       },
       {
         path: 'columns',
-        element: <Main />,
+        element: <Columns />,
       },
     ],
   },
